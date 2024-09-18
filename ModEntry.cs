@@ -51,11 +51,6 @@ namespace MushroomBoxLocationFramework
             }
         }
 
-        [HarmonyReversePatch]
-        [HarmonyPatch(typeof(GameLocation), nameof(GameLocation.setObject))]
-        [MethodImpl(MethodImplOptions.NoInlining)]
-        static string setObjectDummy(StardewValley.Locations.FarmCave instance, Vector2 v, SObject o) => null;
-
 
         internal static bool SetUpMushroomHouse_Prefix(StardewValley.Locations.FarmCave __instance)
         {   
@@ -78,12 +73,11 @@ namespace MushroomBoxLocationFramework
                     SObject mushroomBox = ItemRegistry.Create<SObject>("(BC)128");
                     mushroomBox.fragility.Value = 2;
                     // The first (0th) element is the y, and the second (1st) element is the x.
-                    _monitor.Log($"Setting mushroom box at {numbers[1]}, {numbers[0]}", LogLevel.Info);
-                    setObjectDummy(__instance, new Vector2(numbers[1], numbers[0]), mushroomBox);
+                    __instance.setObject(new Vector2(numbers[1], numbers[0]), mushroomBox);
 
                 }
 
-                setObjectDummy(__instance, new Vector2(10f, 5f), ItemRegistry.Create<SObject>("(BC)Dehydrator"));
+                __instance.setObject(new Vector2(10f, 5f), ItemRegistry.Create<SObject>("(BC)Dehydrator"));
                 
 
 

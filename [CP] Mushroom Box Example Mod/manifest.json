@@ -1,0 +1,16 @@
+{
+  "Name": "MushroomBoxLocationFramework Example",
+  "Author": "Pillow",
+  "Version": "1.0.0",
+  "Description": "Example mod for MushroomBoxLocationFramework",
+  "UniqueID": "Pillow.MBLF.Example",
+  "UpdateKeys": [],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  },
+  "Dependencies": [
+    {
+      "UniqueID": "Pillow.MushroomBoxLocationFramework"
+    }
+  ]
+}

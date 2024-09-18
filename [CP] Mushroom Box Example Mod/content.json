@@ -1,0 +1,14 @@
+{
+  "Format": "2.0",
+  "Changes": [
+    {
+      "LogName": "Modify mushroom boxes",
+      "Action": "EditData",
+      "Target": "Mods/Pillow.MushroomBoxLocationFramework/Boxes",
+      "Entries": {
+        "5,4": false,
+        "5,3": true
+      }
+    }
+  ]
+}
