@@ -1,0 +1,9 @@
+{
+  "Name": "MushroomBoxLocationFramework",
+  "Author": "Pillow",
+  "Version": "1.0.0",
+  "Description": "A mod to allow Content Patcher mods edit the mushroom box location.",
+  "UniqueID": "Pillow.MushroomBoxLocationFramework",
+  "EntryDll": "MushroomBoxLocationFramework.dll",
+  "UpdateKeys": []
+}
