@@ -5,5 +5,7 @@
   "Description": "A mod to allow Content Patcher mods edit the mushroom box location.",
   "UniqueID": "Pillow.MushroomBoxLocationFramework",
   "EntryDll": "MushroomBoxLocationFramework.dll",
-  "UpdateKeys": []
+  "UpdateKeys": [
+    "Nexus:27985"
+  ]
 }
